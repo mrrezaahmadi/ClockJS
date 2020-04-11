@@ -43,8 +43,9 @@ const reset = () => {
 
 renderChronometer()
 
-startEl.addEventListener('click', () => {
+startEl.addEventListener('click', (e) => {
     time = setInterval(start, 1000)
+    
 })
 
 stopEl.addEventListener('click', () => {
@@ -54,3 +55,4 @@ stopEl.addEventListener('click', () => {
 resetEl.addEventListener('click', () => {
     reset()
 })
+
