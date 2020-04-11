@@ -14,7 +14,7 @@ const renderChronometer = () => {
     ${second < 10 ? `0${second}` : second}`
 }
 
-let time = setInterval(0)
+let time = setInterval
 
 const start = () => {
     second++
