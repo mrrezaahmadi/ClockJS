@@ -1,5 +1,6 @@
 const chronometerEl = document.querySelector('.chronometer')
 const startEl = document.querySelector('#start')
+const stopEl = document.querySelector('#stop')
 
 let second = 0
 let minute = 0
@@ -27,9 +28,17 @@ const start = () => {
     renderChronometer()
 }
 
+const stop = () => {
+    clearInterval(time)
+}
+
 
 renderChronometer()
 
 startEl.addEventListener('click', () => {
     time = setInterval(start, 1000)
+})
+
+stopEl.addEventListener('click', () => {
+    stop()
 })
