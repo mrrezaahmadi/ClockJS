@@ -33,7 +33,7 @@ document.querySelector("#start-timer").addEventListener("click", () => {
 })
 
 const render = (hour, minute, second) => {
-	document.querySelector(".timer").innerText = `${
+	document.querySelector(".time").innerText = `${
 		hour < 10 ? `0${hour}` : hour
 	}:${minute < 10 ? `0${minute}` : minute}:${
 		second < 10 ? `0${second}` : second

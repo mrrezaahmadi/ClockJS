@@ -1,0 +1,77 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(24, 24, 24);
+}
+
+div {
+    border: 1px red solid;
+}
+
+.container {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.time {
+    color: white;
+    font-size: 80px;
+    margin: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
+button {
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.lap {
+    color: white;
+    font-size: 40px;
+}
+
+.container__stopwatch {
+    flex-direction: row;
+}
+
+a {
+    text-decoration: none;
+}
+
+.timer-input input {
+    height: 50px;
+    width: 80px;
+    margin: 30px;
+    border: none;
+    font-size: 40px;
+    border-radius: 25px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+input::placeholder {
+    color: gray;
+    font-size: large;
+    font-weight: 300;
+}
+
+

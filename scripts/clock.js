@@ -1,13 +1,12 @@
 let hour12 = true
 
-
 const changeClock = (input) => {
-	document.getElementById("clock").innerText = input
+	document.querySelector(".time").innerText = input
 }
 
 const makeTime = (hour12 = true) => {
-		const time = new Date()
-		return time.toLocaleTimeString("en-us", { hour12: hour12 })
+	const time = new Date()
+	return time.toLocaleTimeString("en-us", { hour12: hour12 })
 }
 
 changeClock(makeTime())
@@ -15,7 +14,6 @@ changeClock(makeTime())
 let interval = setInterval(() => {
 	changeClock(makeTime())
 }, 1000)
-
 
 const changeTimeFormat = () => {
 	clearInterval(interval)
@@ -26,14 +24,10 @@ const changeTimeFormat = () => {
 	}, 1000)
 }
 
-
 const setClock = () => {
 	clearInterval(interval)
 	interval = setInterval(() => {
 		changeClock(makeTime(hour12))
 	}, 1000)
-	mode = "clock"
-	changeButtons(mode)
 	changeClock(makeTime(hour12))
 }
-

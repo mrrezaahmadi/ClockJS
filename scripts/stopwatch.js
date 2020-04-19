@@ -3,7 +3,7 @@ let startTime = new Date()
 // const changeTimeFormatButton = document.getElementById("changeTimeFormatButton")
 
 const render = (input) => {
-	document.getElementById("stopwatch").innerText = input
+	document.querySelector('.time').innerText = input
 }
 
 const setStopwatch = () => {
