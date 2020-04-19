@@ -108,7 +108,7 @@ const setStopWatch = () => {
 const setClock = () => {
 	clearInterval(interval)
 	interval = setInterval(() => {
-		changeClock(makeTime())
+		changeClock(makeTime(hour12))
 	}, 1000)
 	mode = "clock"
 	changeButtons(mode)
