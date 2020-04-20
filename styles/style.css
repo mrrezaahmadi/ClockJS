@@ -19,8 +19,9 @@ html, body {
 
 .time {
     color: white;
-    font-size: 80px;
+    font-size: 120px;
     margin: 20px;
+    font-weight: bold;
 }
 
 .button-container {

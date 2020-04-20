@@ -28,10 +28,18 @@ const setStopwatch = () => {
 let interval = setInterval
 
 const startStopwatch = () => {
+	startTime = new Date()
+	clearInterval(interval)
 	interval = setInterval(() => {
 		render(setStopwatch())
 	}, 1)
 }
+
+document.getElementById('start').addEventListener('click', () => {
+	document.getElementById('lap').removeAttribute('disabled')
+	document.getElementById('restart').removeAttribute('disabled')
+})
+
 
 const lap = () => {
 	const p = document.createElement('p')

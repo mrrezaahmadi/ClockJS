@@ -11,10 +11,10 @@
 			<div class="container">
 				<div class="time">00:00:00</div>
 				<div class="button-container">
-					<button onclick="startStopwatch()">Start</button>
+					<button id="start" onclick="startStopwatch()">Start</button>
 					<button onclick="pauseStopwatch()">pause</button>
-					<button onclick="restartTimer()">Restart</button>
-					<button onclick="lap()">Lap</button>
+					<button disabled id="restart" onclick="restartTimer()">Restart</button>
+					<button disabled id="lap" onclick="lap()">Lap</button>
 				</div>
 				<a href="./clock.html"><button>Back</button></a>
 			</div>
